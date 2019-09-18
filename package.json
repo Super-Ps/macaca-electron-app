@@ -6,7 +6,10 @@
   "dependencies": {
     "chai": "^4.2.0",
     "electron-is-dev": "^1.1.0",
-    "macaca-chromedriver": "^1.2.1",
+    "macaca-chrome": "^1.1.1",
+    "macaca-chromedriver": "^1.2.3",
+    "macaca-cli": "^2.2.0",
+    "macaca-wd": "^3.2.1",
     "mocha": "^6.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -21,7 +24,9 @@
     "electron-start": "electron .",
     "electron-dev": "concurrently \"BROWSER=none react-scripts start\" \"wait-on http://localhost:3000 && electron .\"",
     "dist": "electron-builder",
-    "open-t": " node_modules/macaca-chromedriver/exec/ch*  &  node_modules/.bin/mocha  testCase/ "
+    "open-t": " node_modules/macaca-chrome/node_modules/macaca-chromedriver/exec/ch*  &  node_modules/.bin/mocha  testCase/ ",
+    "test-1": " mocha  testCase/",
+    "macaca-server" : "macaca server --verbose" 
   },
   "main": "public/electron.js",
   "homepage": "./",
