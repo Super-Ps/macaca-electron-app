@@ -13,8 +13,8 @@
     "mocha": "^6.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1",
-    "selenium-webdriver": "^4.0.0-alpha.4"
+    "react-scripts": "3.0.1"
+    
   },
   "scripts": {
     "start": "react-scripts start",
@@ -24,9 +24,9 @@
     "electron-start": "electron .",
     "electron-dev": "concurrently \"BROWSER=none react-scripts start\" \"wait-on http://localhost:3000 && electron .\"",
     "dist": "electron-builder",
-    "open-t": " node_modules/macaca-chrome/node_modules/macaca-chromedriver/exec/ch*  &  node_modules/.bin/mocha  testCase/ ",
-    "test-1": " mocha  testCase/",
-    "macaca-server" : "macaca server --verbose" 
+    "mac-start": " node_modules/macaca-chromedriver/exec/ch*  &  macaca server --verbose ",
+    "test-1": " mocha  testCase/"
+    
   },
   "main": "public/electron.js",
   "homepage": "./",
