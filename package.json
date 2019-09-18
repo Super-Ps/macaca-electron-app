@@ -19,13 +19,13 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": " concurrently \"node_modules/macaca-chromedriver/exec/ch*\" \"node_modules/.bin/mocha  testCase/\"  ",
+    "test-concurrently": " concurrently \"node_modules/macaca-chromedriver/exec/ch*\" \"node_modules/.bin/mocha  testCase/\"  ",
     "eject": "react-scripts eject",
     "electron-start": "electron .",
     "electron-dev": "concurrently \"BROWSER=none react-scripts start\" \"wait-on http://localhost:3000 && electron .\"",
     "dist": "electron-builder",
     "mac-start": " node_modules/macaca-chromedriver/exec/ch*  &  macaca server --verbose ",
-    "test-1": " mocha  testCase/"
+    "test": " mocha  testCase/"
     
   },
   "main": "public/electron.js",
