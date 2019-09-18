@@ -43,8 +43,9 @@ yarn  add electron-builder --dev
 $ npm install 
 $ npm run build // 先打包React应用到`build`目录下    
 $ npm run dist // 再用electron-builder打包Electron应用  
-在 dist 选择dmg安装，然后找到安装路劲 替换到demo.test.js的Electron的路径  
-最后执行 npm run open-t  
+在 dist 选择dmg安装，然后找到安装路劲 替换到demo.test.js的chromeOptions对象下的binary参数  
+启动服务mac执行  npm run mac-start  
+最后执行测试示例  npm run test  
 
 
 
