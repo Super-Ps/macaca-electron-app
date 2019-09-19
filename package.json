@@ -1,6 +1,6 @@
 {
   "name": "emdemo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "author": "jonnyps",
   "dependencies": {
@@ -24,15 +24,16 @@
     "electron-start": "electron .",
     "electron-dev": "concurrently \"BROWSER=none react-scripts start\" \"wait-on http://localhost:3000 && electron .\"",
     "dist": "electron-builder",
-    "mac-start": " node_modules/macaca-chromedriver/exec/ch*  &  macaca server --verbose ",
-    "test": " mocha  testCase/"
+    "mac-start": " node_modules/macaca-chromedriver/exec/ch* ",
+    "server" : "macaca server --verbose",
+    "test": " node_modules/.bin/mocha  testCase/"
     
   },
   "main": "public/electron.js",
   "homepage": "./",
   "build": {
-    "productName": "electron-builder-start",
-    "appId": "org.simulatedgreg.electron-builder-start",
+    "productName": "macaca-electron-builder",
+    "appId": "org.simulatedgreg.macaca-electron-builder",
     "directories": {
       "output": "dist"
     },

@@ -23,27 +23,40 @@ describe('test',function(){
   });
 
     before(function() {
+     
       return driver.init({
         platformName: 'desktop',
         browserName: 'chrome',
         chromeOptions: {
-          "binary": "/Applications/electron-builder-start.app/Contents/MacOS/electron-builder-start"
+          "binary": "/Applications/macaca-electron-builder.app/Contents/MacOS/macaca-electron-builder"// 填写自己的执行文件路劲
+          
         }
-      })
-      //.sleep(10*1000)
+      }).sleep(10*1000)
+      
     });
 
     after(function(){
+      
       return driver
+        .sleep(1000)
         .quit()
+        
     })
 
-    it('#1 electron test...',function(){
 
-      return driver.elementByCss('#root > div > header > a:nth-child(3)')
+    //*[@id="root"]/div/header/a[1]
+    it('#1 electron test...',function(){
+     console.log('it start')
+     //driver.elementByCss('#root > div > header > a:nth-child(3)')
+      return driver.elementById('macacaId')
+      .sleep(3000)
       .click()
       .sleep(3000)
     })
+
+    // it('#2 macaca home',function(){
+    //   console.log('home')
+    // })
 
     
 

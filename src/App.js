@@ -10,13 +10,13 @@ function App() {
         <p>
            Macaca + react 环境  
         </p>
-        <a 
+        <a id="macacaId"
           href="https://macacajs.github.io/zh/"
           rel="noopener noreferrer"
         >
           Learn Macaca
         </a>
-        <a
+        <a id="reactId"
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
