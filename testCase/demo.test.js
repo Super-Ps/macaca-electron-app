@@ -35,7 +35,6 @@ describe('test',function(){
 
     after(function(){
       return driver
-        .sleep(5000)
         .quit()
     })
 
