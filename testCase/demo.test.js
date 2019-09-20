@@ -39,7 +39,8 @@ describe('test',function(){
       
       return driver
         .sleep(1000)
-        .quit()
+        .close()
+        
         
     })
 
@@ -48,15 +49,16 @@ describe('test',function(){
     it('#1 electron test...',function(){
      console.log('it start')
      //driver.elementByCss('#root > div > header > a:nth-child(3)')
-      return driver.elementById('macacaId')
-      .sleep(3000)
+      //return driver.elementById('macacaId')
+      return driver.waitForElementById('macacaId',5000,100)
       .click()
-      .sleep(3000)
+      
     })
 
     it('#2 macaca home',function(){
        console.log('home')
        return driver.elementByCss('#app > div > header > div.sidebar-button')
+       
        .click()
     
      })
@@ -67,13 +69,26 @@ describe('test',function(){
       .click()
      })
 
-     it('#4 ',function(done){
+     it('#4 ',function(){
 
       return  driver.elementByCss('#app > div > div.sidebar > nav > div:nth-child(3) > div > a > span.title')
       .sleep(3000)
       .click()
       
      })
+
+     it('#5',function(){
+
+     
+      return  driver.elementByCss('#app > div > header > div.links > div > input')
+      .sleep(2000)
+      .click()
+      .sendKeys('计算机')
+      
+     })
+
+
+
 
     
 
