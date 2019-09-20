@@ -25,8 +25,9 @@
     "electron-dev": "concurrently \"BROWSER=none react-scripts start\" \"wait-on http://localhost:3000 && electron .\"",
     "dist": "electron-builder",
     "mac-start": " node_modules/macaca-chromedriver/exec/ch* & macaca server --verbose",
-    "server" : "macaca server --verbose",
-    "test": " node_modules/.bin/mocha  testCase/"
+    "win-server" : "macaca server --verbose",
+    "win-start": " node server/servers.js ",
+    "test": " mocha  testCase/"
     
   },
   "main": "public/electron.js",
