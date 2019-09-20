@@ -15,7 +15,7 @@ Test electron. App
 
 ## Contributors
 
-|[<img src="https://s2.ax1x.com/2019/09/21/nvhcaq.png width="100px;"/><br/><sub><b>Super-Ps</b></sub>](https://github.com/Super-Ps)<br/>|
+|[<img src="https://s2.ax1x.com/2019/09/21/nvhcaq.png" width="100px;"/><br/><sub><b>Super-Ps</b></sub>](https://github.com/Super-Ps)<br/>|
 
 ## start
 ```bash
