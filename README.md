@@ -16,22 +16,22 @@ $ npm run dist
 Select dmg,mac.zip or exe installation in dist directory, and then find the installation path to replace the binary parameter under the chromeOptions object of demo.test.js  
 
 - mac:
-1. ```bash
+1.```bash
 $ npm run mac-start 
 ```  
-2. ```bash
+2.```bash
 $ npm run test 
 ``` 
 - win:
-1. ```bash
+1.```bash
 $ npm run win-start 
 ```  
 2.```bash
 $ npm run win-server  
 ```  
-3.```bash
+```bash
 $ npm run test   
-```  
+```
 
 ## License
 
