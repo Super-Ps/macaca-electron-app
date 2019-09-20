@@ -4,25 +4,22 @@ const path = require('path')
 const join = require('path').join
 
 
-var path1 = path.resolve(__dirname,'..') + '\\node_modules\\macaca-chromedriver\\exec\\'
+let pathJoin = path.resolve(__dirname,'..') + '\\node_modules\\macaca-chromedriver\\exec\\'
 
-function getJsonFiles(path1) {
+function getJsonFiles(pathJoin) {
     let fPath 
-    let files = fs.readdirSync(path1)
+    let files = fs.readdirSync(pathJoin)
       files.forEach((item, index)=> {
         
-          fPath = join(path1, item);
+          fPath = join(pathJoin, item);
       //  let stat = fs.statSync(fPath);
       console.log(`item${item},index${index}`)
       
       });
-      console.log(fPath); 
-
       return  fPath
-
     }
 
-const bat = spawn(getJsonFiles(path1));
+const bat = spawn(getJsonFiles(pathJoin));
 
 
  bat.stdout.on('data', (data) => {
@@ -34,7 +31,7 @@ bat.stderr.on('data', (data) => {
 });
 
 bat.on('exit', (code) => {
-  console.log(`子进程退出，退出码 ${code}`);
+  console.log(`winChromeDriver子进程退出，退出码 ${code}`);
 });
  
 
