@@ -29,9 +29,9 @@ describe('test',function(){
         browserName: 'chrome',
         chromeOptions: {
           "binary": "/Applications/macaca-electron-builder.app/Contents/MacOS/macaca-electron-builder"// 填写自己的执行文件路劲
-          
+
         }
-      }).sleep(10*1000)
+      }).sleep(2*1000)
       
     });
 
@@ -54,9 +54,26 @@ describe('test',function(){
       .sleep(3000)
     })
 
-    // it('#2 macaca home',function(){
-    //   console.log('home')
-    // })
+    it('#2 macaca home',function(){
+       console.log('home')
+       return driver.elementByCss('#app > div > header > div.sidebar-button')
+       .click()
+    
+     })
+     it('#3 ',function(){
+
+      return driver.elementByCss('#app > div > div.sidebar > nav > div:nth-child(2) > div > a > span.title')
+      .sleep(3000)
+      .click()
+     })
+
+     it('#4 ',function(done){
+
+      return  driver.elementByCss('#app > div > div.sidebar > nav > div:nth-child(3) > div > a > span.title')
+      .sleep(3000)
+      .click()
+      
+     })
 
     
 
