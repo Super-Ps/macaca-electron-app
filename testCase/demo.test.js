@@ -7,7 +7,7 @@ const remoteConfig = {
 
 const driver = wd.promiseChainRemote(remoteConfig);
 
-describe('test',function(){
+describe('test macaca',function(){
   this.timeout(5 * 60 * 1000);
 
   var driver = wd.promiseChainRemote({
@@ -36,25 +36,25 @@ describe('test',function(){
 
 
     //*[@id="root"]/div/header/a[1]
-    it('#1 electron test...',function(){
+    it('click link',function(){
       return driver.waitForElementById('macacaId',5000,100)
       .click()
       
     })
 
-    it('#2 ',function(){
+    it('click button',function(){
        return driver.elementByCss('#app > div > header > div.sidebar-button')
       .click()
     
      })
-     it('#3 ',function(){
+     it('click title ',function(){
 
       return driver.elementByCss('#app > div > div.sidebar > nav > div:nth-child(2) > div > a > span.title')
       .sleep(2000)
       .click()
      })
 
-     it('#4 ',function(){
+     it('click title',function(){
 
       return  driver.elementByCss('#app > div > div.sidebar > nav > div:nth-child(3) > div > a > span.title')
       .sleep(2000)
@@ -62,7 +62,7 @@ describe('test',function(){
       
      })
 
-     it('#5',function(){
+     it(' input text',function(){
       return  driver.elementByCss('#app > div > header > div.links > div > input')
       .sleep(2000)
       .click()
