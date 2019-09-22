@@ -24,9 +24,10 @@
     "electron-dev": "concurrently \"BROWSER=none react-scripts start\" \"wait-on http://localhost:3000 && electron .\"",
     "dist": "electron-builder",
     "mac-start": " node_modules/macaca-chromedriver/exec/ch* & macaca server --verbose",
-    "win-server" : "macaca server --verbose",
+    "win-server": "macaca server --verbose",
     "win-start": " node server/servers.js ",
-    "test": " mocha test/"
+    "test": " mocha test/",
+    "lint": "eslint . --fix"
   },
   "main": "public/electron.js",
   "homepage": "./",
@@ -102,6 +103,7 @@
     "electron": "^5.0.8",
     "electron-builder": "^21.1.5",
     "electron-packager": "^14.0.4",
+    "eslint-plugin-mocha": "^6.1.1",
     "wait-on": "^3.3.0"
   }
 }
