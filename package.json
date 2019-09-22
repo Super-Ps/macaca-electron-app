@@ -14,7 +14,6 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
-    
   },
   "scripts": {
     "start": "react-scripts start",
@@ -28,7 +27,6 @@
     "win-server" : "macaca server --verbose",
     "win-start": " node server/servers.js ",
     "test": " mocha test/"
-    
   },
   "main": "public/electron.js",
   "homepage": "./",
