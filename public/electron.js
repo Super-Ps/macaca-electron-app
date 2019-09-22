@@ -1,4 +1,7 @@
-const { app, BrowserWindow } = require('electron')
+const {
+    app,
+    BrowserWindow
+} = require('electron')
 const path = require('path')
 const isDev = require('electron-is-dev')
 
@@ -10,11 +13,11 @@ function createWindow() {
         height: 600,
     })
     //mainWindow.loadFile('index.html')
-        if (isDev) {
-                mainWindow.loadURL('http://localhost:3000/')
-            } else {
-                mainWindow.loadFile(path.join(__dirname, '/../build/index.html'))
-           }
+    if (isDev) {
+        mainWindow.loadURL('http://localhost:3000/')
+    } else {
+        mainWindow.loadFile(path.join(__dirname, '/../build/index.html'))
+    }
 
     mainWindow.webContents.openDevTools()
     mainWindow.on('closed', function () {
