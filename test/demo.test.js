@@ -9,7 +9,7 @@ const driver = wd.promiseChainRemote(remoteConfig);
 
 describe('test electron.app', function () {
   this.timeout(5 * 60 * 1000);
-  var driver = wd.promiseChainRemote({
+  let driver = wd.promiseChainRemote({
     host: 'localhost',
     port: process.env.MACACA_SERVER_PORT || 3456
   });
