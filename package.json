@@ -27,7 +27,7 @@
     "mac-start": " node_modules/macaca-chromedriver/exec/ch* & macaca server --verbose",
     "win-server" : "macaca server --verbose",
     "win-start": " node server/servers.js ",
-    "test": " mocha  testCase/"
+    "test": " mocha test/"
     
   },
   "main": "public/electron.js",
